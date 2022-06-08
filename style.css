@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* header */
+header{
+    
+}
+
+.logo-kanda{
+    width: 8%;
+    display: flex;
+    justify-content: flex-start;
+}
+/* nav bar */
+nav{
+    background-color: rgb(239, 223, 255);
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+.nav1:hover{
+    color: white;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.titulos{
+    color: rgb(51, 16, 54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.imagen1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* menú */
+main{
+    background-image: url(/images/fondo-kanda-muffin.jpeg);
+    height: auto;
+     /* cambiar tamaño */
+}
+
+main h2 {
+    text-align: center;
+    padding: 20px;
+    color: #231942;
+}
+
+.video1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* footer */
+.logos{
+    margin-left: 10px;
+    
+}
+.logo-ig{
+    width: 3%;
+}
+
+.logo-fb{
+    width: 3%;
+}
+
+.wsp-logo{
+    width: 3%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    
+    /* right: 130px; */
+}
+footer{
+    background-color: rgb(239, 223, 255);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+}
+
+/* card nueva */
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+    }
+    /* a{
+    text-decoration: none;
+    } */
+    .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0;
+    }
+    .content{
+    width: 24%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: .4s;
+    }
+    .content:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transform: translate(0px, -8px);
+    transition: .6s;
+    }
+
+    .img-producto{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    }
+    p{
+    text-align: center;
+    color: #5e548e;
+    padding: 0 8px;
+    }
+    h6{
+    font-size: 26px;
+    text-align: center;
+    color: #231942;
+    margin: 5px;
+    padding: 10px;
+    }
+    
+    button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px;
+    }
+    .buy-1{
+    background-color: #cdb4db;
+    }
+    
+    @media(max-width: 1000px){
+    .content{
+    width: 46%;
+    }
+    }
+    @media(max-width: 750px){
+    .content{
+    width: 100%;
+    }
+    }
