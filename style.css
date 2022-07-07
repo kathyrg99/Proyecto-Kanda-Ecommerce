@@ -126,7 +126,32 @@ main h2 {
 }
 
 /* REDES index*/
+.contenedor-redes{
+    display: flex;
+    justify-content: center;
+}
+.fb-cont{
+    width: 4%;
+}
+.fb-cont img{
+    width: 100%;
 
+}
+.ig-cont{
+    width: 5.5%;
+    margin: 0 80px;
+
+
+}
+.ig-cont img{
+    width: 100%;
+}
+.wsp-cont{
+width: 4%;
+}
+.wsp-cont img{
+width: 100%;
+}
 
 
 /* Grid index */
@@ -152,6 +177,8 @@ main h2 {
 
 
 }
+
+/* PRODUCTOS */
 
 /* Grid productos */
 .contenedor-grid{
@@ -217,8 +244,70 @@ main h2 {
     
 }
 
-/* Cards */
+/* NOSOTROS */
+.nosotros-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
 
+.img-nos-cont{
+    width: 20%;
+    margin-left: 200px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+}
+.img-nos-cont img{
+    width: 100%;
+    border: 6px solid whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    justify-content: center;
+}
+
+.nos-text-cont{
+    width: 500px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nos-text-cont p{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.img-nos-cont2{
+    width: 15%;
+    
+    margin-right: 200px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+}
+.img-nos-cont2 img{
+    width: 100%;
+    border: 6px solid whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    
+}
+
+.nos-text-cont2{
+    width: 500px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nos-text-cont2 p{
+    display: flex;
+    
+}
 
 /* footer */
 .logos{
