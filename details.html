@@ -17,7 +17,16 @@
             <a href="/index.html"><img class="logo-kanda" src="./images/logokanda.png" alt="logokanda"></a>
             </div>
                 <li> <a href="index.html" class="nav1">Home</a> </li>
-                <li> <a href="./productos.html" class="nav1">Productos</a> </li>
+                <div class="dropdown">
+            <li></li><a href="./productos.html" class="nav1">Productos</a> </li>
+            <div class="dropdown-content">
+            <a href="#">Alfajores y Cookies</a>
+            <a href="#">Tartas y Pastafrolas</a>
+            <a href="#">Budines y Muffins</a>
+            <a href="#">Dulces y Chocolates</a>
+            <a href="#">Boxes</a>
+            </div>
+        </div> 
                 <li> <a href="./nosotros.html" class="nav1">Nosotros</a> </li>
                 <li> <a href="./contacto.html" class="nav1">Contacto</a> </li>
                 <li> 
@@ -38,25 +47,39 @@
             
         </nav>
 
+        
     </header>
 
     <main>
-        <div class="menu-titulos">
-            <p>Comunicate con nosotros</p>
-        </div>
-        <section class="cont-formulario">
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input class="datos"  name="nombre" placeholder="Nombre completo">
-            <label for="email">Email:</label>
-            <input class="datos" name="email" type="email" placeholder="ejemplo@email.com">
-            <label for="mensaje">Mensaje:</label>
-            <textarea class="textArea" name="mensaje" placeholder="Danos tu mensaje"></textarea>
-            <div class="boton-form-cont">
-            <input class="submit" name="submit" type="submit" value="Enviar">
+        <section class="detail-container">
+            <div class="menu-titulos">
+                <p>Alfajores de maicena</p>
             </div>
-        </form>
-    </section>
+            <div class="cont-detail-img">
+            <img src="./images/alfajores-de-maicena.jpg" alt="Alfajor de maicena">
+            </div>
+            <div class="cont-detail-precio">
+                <div class="cont-p">
+                    <p>$80 c/u</p>
+                </div>
+                
+            </div>
+                
+            <div class="cont-detail-cantidad">
+                <div><p>Cantidad</p></div>
+                
+                <div class="cont-quantity">
+                <input class="quantity" type="number"  name="contador" min="1" max="100">
+                </div>
+            </div>
+
+            <div class="cont-detail-addtocart">
+                <a href="#"><input type="button" value="Agregar al carrito"></a>
+            </div>
+        
+
+        </section>
+
     </main>
     <!-- logo whatsapp flotante -->
     

@@ -24,9 +24,6 @@ body{
 }
 nav{
     background-color: rgb(239, 223, 255);
-   /*  display: flex;
-    justify-content: center;
-    align-items: center; */
     padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     top: 0;
@@ -67,6 +64,7 @@ a{
     padding: 10px 18px;
     font-size: 13px;
     border-radius: 30px;
+    outline: none;
 }
 
 
@@ -99,7 +97,37 @@ a{
     
 }
 
-/* menú */
+/* dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9eafd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+
+/* MENÚ */
 main{
     background-image: url(/images/fondo-kanda-muffin.jpeg);
     height: auto;
@@ -122,7 +150,7 @@ main h2 {
     font-size: 25px;
     text-align: center;
     font-weight: bold;
-    padding: 50px;
+    padding: 20px;
 }
 
 /* REDES index*/
@@ -131,14 +159,14 @@ main h2 {
     justify-content: center;
 }
 .fb-cont{
-    width: 4%;
+    width: 3%;
 }
 .fb-cont img{
     width: 100%;
 
 }
 .ig-cont{
-    width: 5.5%;
+    width: 4.4%;
     margin: 0 80px;
 
 
@@ -147,7 +175,7 @@ main h2 {
     width: 100%;
 }
 .wsp-cont{
-width: 4%;
+width: 3%;
 }
 .wsp-cont img{
 width: 100%;
@@ -157,7 +185,7 @@ width: 100%;
 /* Grid index */
 .cont-grid-index{
     display: grid;
-    margin: 0 200px;
+    margin: 0px 200px;
     grid-template-columns: repeat( 4, 1fr);
     grid-template-rows: repeat(1, auto);
     gap: 20px;
@@ -166,16 +194,44 @@ width: 100%;
 
 .img-cont-card-index img{
     width: 100%;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-radius: 7px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.img-cont-card-index a:hover{
-    opacity: 0.85;
 
+.contenedor-overlay {
+    position: relative; 
+    width: 100%;
+}
 
+.contenedor-overlay:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-text-card {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #6b5c78e1;
+    border-radius: 7px;
+}
+
+.overlay p{
+    font-size: 20px;
 }
 
 /* PRODUCTOS */
@@ -241,8 +297,86 @@ width: 100%;
     padding: 8px;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    cursor:pointer;
     
 }
+
+/* DETAIL */
+.detail-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.cont-detail-img{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+
+}
+.cont-detail-img img{
+    width: 100%;
+    border: 3px solid white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.cont-detail-precio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cont-detail-precio p{
+    font-size: 20px;
+    color: #6B5C78;
+}
+.cont-p{
+    margin-right: 4px;
+}
+.cont-quantity{
+    margin-left: 5px;
+}
+.cont-quantity input{
+    width: 35px;
+    border: 0px;
+    height: 10px;
+    padding: 8px 0px 8px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.cont-detail-cantidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-detail-cantidad div p{
+    margin-right: 5px;
+}
+
+.cont-detail-addtocart{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.cont-detail-addtocart input{
+    width: 100%;
+    border: none;
+    color: #231942;
+    font-weight: bold;
+    background-color: rgb(239, 223, 255);
+    padding: 8px 30px 8px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
 
 /* NOSOTROS */
 .nosotros-container{
@@ -307,6 +441,73 @@ width: 100%;
 .nos-text-cont2 p{
     display: flex;
     
+}
+
+/* FORMULARIO */
+.cont-formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+
+.principal {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #ffffff;
+    font-family:Arial;
+}
+
+.datos{
+    width:380px;
+    height: 15px;
+    background:#ffffff;
+    border:2px solid #ffffff;
+    padding:10px;
+    margin-top:5px;
+    font-size: 15px;
+    color:rgb(51, 16, 54);
+    border-radius: 20px;
+}
+
+form {
+    margin:0 auto;
+    width:400px;
+}
+
+.textArea{
+    width:380px;
+    height: 150px;
+    background:#ffffff;
+    border:2px solid #ffffff;
+    padding:10px;
+    margin-top:5px;
+    font-size: 15px;
+    color:rgb(51, 16, 54);
+    border-radius: 20px;
+}
+
+.boton-form-cont{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.submit {
+    background-color: #ffffff;
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+    border-radius: 20px;
 }
 
 /* footer */
