@@ -117,6 +117,7 @@ a{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 14px;
     }
 
 .dropdown-content a:hover {
@@ -147,38 +148,84 @@ main h2 {
 }
 
 .menu-titulos{
-    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* REDES index*/
 .contenedor-redes{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .fb-cont{
-    width: 3%;
+    width: 2%;
 }
-.fb-cont img{
+.fb-cont a img{
     width: 100%;
 
 }
 .ig-cont{
-    width: 4.4%;
-    margin: 0 80px;
-
-
+    width: 3%;
+    /* margin: 0 30px; */
 }
-.ig-cont img{
+.ig-cont a img{
     width: 100%;
 }
 .wsp-cont{
-width: 3%;
+width: 2.2%;
 }
-.wsp-cont img{
+.wsp-cont a img{
 width: 100%;
+}
+/* seccion envios index */
+.seccion-envios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.cont-index-envios{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.cont-img-index-envio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-img-index-envio img{
+    width: 28%;
+}
+
+.cont-texto-index p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.cont-img-index-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cont-img-index-card img{
+    width: 20%;
+}
+.cont-img-index-lock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cont-img-index-lock img{
+    width: 28%;
 }
 
 
@@ -237,11 +284,27 @@ width: 100%;
 /* PRODUCTOS */
 
 /* Grid productos */
-.contenedor-grid{
+.contenedor-grid1{
     display: grid;
     margin: 0 200px;
     grid-template-columns: repeat( 4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    
+}
+.contenedor-grid2{
+    display: grid;
+    margin: 0 200px;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 20px;
+    
+}
+.contenedor-grid3{
+    display: grid;
+    margin: 0 200px;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 20px;
     
 }
@@ -253,14 +316,36 @@ width: 100%;
     border-bottom-right-radius: 7px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.menu-titulos-productos{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+}
+.menu-titulos-productos p{
+    background-color: #996dc05d;
+    padding: 0px 0 4px 0;
+}
 
-.img-container img{
+.img-container a img{
     width: 100%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px ;
 }
+.img-container a img:hover{
+    transition-duration: 0.4s;
+    opacity: 0.85;
+}
 .texto-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.titulo-card a:hover{
+    text-decoration: underline;
+    color: #231942;
 }
 .titulo-card{
     display: flex;
@@ -271,12 +356,7 @@ width: 100%;
 }
 
 .descripcion-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0px;
-    
-    
+padding: 7px; 
 }
 .descripcion-card p{
     text-align: center;
@@ -286,20 +366,12 @@ width: 100%;
     display: flex;
     justify-content: center;
     font-weight: bold; 
-    padding: 5px;
     font-size: 14px;
 }
-
-.btn-container input{
-    width: 100%;
-    border: none;
-    background-color: rgb(239, 223, 255);
-    padding: 8px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    cursor:pointer;
-    
+.precio-card p{
+    margin-bottom: 8px;
 }
+
 
 /* DETAIL */
 .detail-container{
@@ -375,7 +447,10 @@ width: 100%;
     cursor: pointer;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
+.cont-detail-addtocart input:hover{
+    transition-duration: 0.4 ;
+    opacity: 0.85;
+}
 
 
 /* NOSOTROS */
@@ -522,6 +597,8 @@ form {
 .logo-fb{
     width: 3%;
 }
+
+/* logo wsp flotante  */
 
 .wsp-logo{
     width: 3%;
