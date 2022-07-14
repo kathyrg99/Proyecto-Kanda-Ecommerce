@@ -444,12 +444,11 @@ padding: 7px;
 /* CONTACTO */
 /* FORMULARIO */
 .cont-formulario{
-    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-label {
+label { 
     width: auto;
     font-size: 14px;
     display:block;
@@ -668,4 +667,12 @@ footer{
 }
 .cont-cel div img{
     width: 100%;
+}
+
+/* Responsive */
+/* Mobile */
+@media screen and (max-width: 768px){
+    .nav{
+        background-color: #231942;
+    }
 }
