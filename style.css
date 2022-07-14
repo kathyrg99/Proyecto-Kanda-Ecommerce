@@ -61,19 +61,6 @@ a{
     display: flex;
     justify-content: center;
 }
-/* .titulos{
-    color: rgb(51, 16, 54);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-} */
-/* .imagen1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 /* Menú desplegable (Productos) */
 .dropdown {
@@ -109,8 +96,9 @@ main{
     height: auto;
 }
 
-main h2 {
+.presentacion{
     text-align: center;
+    font-size: 18px;
     padding: 20px;
     color: #231942;
 }
@@ -171,13 +159,47 @@ main h2 {
 .overlay p{
     font-size: 20px;
 }
+.contactanos-index-cont p{
+    background-color: #6b5c78bb;
+    padding: 2px;
+    font-size: 18px;
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
 
+.cont-logos-index{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.fb-cont-index{
+    padding: 8px;
+    width: 3%;
+}
+.fb-cont-index a img{
+    width: 100%;
+}
+.ig-cont-index{
+    padding: 8px;
+    width:3%;
+}
+.ig-cont-index a img{
+    width: 100%;
+}
+.wsp-cont-index{
+    padding: 8px;
+    width: 3%;
+}
+.wsp-cont-index a img{
+    width: 100%;
+}
 /* Envíos - medios de pago - compra segura*/
 .seccion-envios{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    padding: 0px 0px 40px 0px;
 }
 .cont-index-logos{
     display: flex;
@@ -448,7 +470,7 @@ padding: 7px;
     align-items: center;
     justify-content: center;
 }
-label { 
+form label { 
     width: auto;
     font-size: 14px;
     display:block;
@@ -669,10 +691,189 @@ footer{
     width: 100%;
 }
 
+/* menu hamburguesa */
+.menu-hamburguesa-container{
+}
+
 /* Responsive */
 /* Mobile */
-@media screen and (max-width: 768px){
-    .nav{
-        background-color: #231942;
+@media screen and (max-width: 767px){    
+    nav{
+    display: none;
+    }
+    .cart-container{
+        display: none;
+    }
+    /* menu hamburguesa */
+    .menu-hamburguesa-container{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:rgb(239, 223, 255);
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .menu-hamburguesa-container ul li{
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu-hamburguesa-container img{
+        width: 8%;
+    }
+    .logo-container-mobile{
+        width: 100%;
+    }
+    .logo-container-mobile img{
+        width: 50px;
+        margin-left: 3px;
+    }
+    .bar-btn{
+        margin-right: 20px;
+        color: black;
+        cursor:pointer;
+    }
+    .nav-menu{
+        position: fixed;
+        width: 100%;
+        height: 10px;
+        top:45px;
+        background:rgba(239, 223, 255, 0.918);
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav-menu li{
+        display: none;
+        line-height: 10px;
+        margin: 30px 60px 30px 0;
+        transition: all .5s;
+        text-align: center;
+    }
+    .nav-menu li a{
+        
+        color: rgb(102, 27, 112);
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .nav-menu li a.active, .nav-menu li a:hover{
+        color: #231942;
+        transition: .3s;
+    }
+    #check{
+        display: none;
+    }
+    #check:checked ~ .nav-menu{
+        height: 100vh;
+    }
+    #check:checked ~ .nav-menu li{
+        display: block;
+    }
+    /* index */
+    .menu-titulos p{
+        font-size: 17px;
+    }
+    .cont-grid-index{
+    width: 90%;
+    }
+    .cont-grid-index{
+        margin: 0;
+        grid-template-columns: repeat( 1, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+    }
+    .contenedor-grid-mobile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo-mobile{
+        text-align: center;
+        background-color: #9d7eb8ce;
+        
+        border-radius: 7px;
+    }
+    .titulo-mobile p{
+        color: #f1f1f1;
+    }
+    .seccion-envios{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .cont-logos-index{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .fb-cont-index{
+        padding: 8px;
+        width: 8%;
+    }
+    .fb-cont-index a img{
+        width: 100%;
+    }
+    .ig-cont-index{
+        padding: 8px;
+        width:8%;
+    }
+    .ig-cont-index a img{
+        width: 100%;
+    }
+    .wsp-cont-index{
+        padding: 8px;
+        width: 8%;
+    }
+    .wsp-cont-index a img{
+        width: 100%;
+    }
+    /* grid productos */
+    .contenedor-grid-productos{
+        width: 96%;
+        margin: 8px 8px 8px 7px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-grid1{
+        width: 100%;
+        margin: 8px 0  8px 0;
+        display: inline-block;
+        justify-content: center;
+    
+    }
+    .contenedor-grid2{
+        width: 100%;
+        margin: 8px 0  8px 0;
+        display: block;
+    }
+    .contenedor-grid3{
+        width: 100%;
+        margin: 8px 0  8px 0;
+        display: block;
+    }
+    .contenedor-card{
+        margin: 12px 0  12px 0;
+    }
+    /* detail */
+    .cont-detail-img{
+        width: 70%;
+    }
+    .descripcion-detail{
+        width: 70%;
+    }
+    .video1{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .menu-hamburguesa-container{
+        display: none;
+    }
+    .titulo-mobile{ 
+        display: none;
     }
 }

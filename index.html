@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/604d6a01ab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     
     <title>Dulces Kanda | Home</title>
@@ -47,10 +48,27 @@
                 </div>
             </ul>
         </nav>
+<!-- menu desplegable mobile -->
+<div class="menu-hamburguesa-container">
+    <div class="logo-container-mobile">
+            <img src="./images/logokanda.png" alt="logokanda">
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check" class="bar-btn">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+    <ul class="nav-menu">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./productos.html" class="active">Productos</a></li>
+        <li><a href="./nosotros.html" class="active">Nosotros</a></li>
+        <li><a href="./contacto.html" class="active">Contacto</a></li>
+        <li><a href="./novedades.html" class="active">Novedades</a></li>
+    </ul>
+</div>
     </header>
 
     <main>
-        <h2>Kanda es nuestro pequeño emprendimiento de dulces artesanales 💕</h2>
+        <p class="presentacion">Kanda es nuestro pequeño emprendimiento de dulces artesanales 💕</p>
         <section class="video1">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/WcopiPmozjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
@@ -60,7 +78,11 @@
         </div>
 
         <!-- Grid Index -->
+        <div class="contenedor-grid-mobile">
         <section class="cont-grid-index">
+            <div class="titulo-mobile">
+                <a href="./productos.html#alfajores-y-cookies"><p>ALFAJORES</p></a>
+            </div>
             <div class="cont-card-index">
                 <div class="contenedor-overlay">
                     <div class="img-cont-card-index">
@@ -74,6 +96,10 @@
                         </a>
                     </div>
                 </div>
+            </div>
+
+            <div class="titulo-mobile">
+                <a href="./productos.html#dulces-y-chocolates"><p>MERIENDA</p></a>
             </div>
 
             <div class="cont-card-index">
@@ -90,7 +116,9 @@
                     </div>
                 </div>
             </div>
-
+            <div class="titulo-mobile">
+                <a href="./novedades.html"><p>NOVEDADES</p></a>
+            </div>
             <div class="cont-card-index">
                 <div class="contenedor-overlay">
                     <div class="img-cont-card-index">
@@ -104,6 +132,10 @@
                         </a>
                     </div>
                 </div>
+            </div>
+
+            <div class="titulo-mobile">
+                <a href="./productos.html#boxes"><p>BOXES</p></a>
             </div>
 
             <div class="cont-card-index">
@@ -121,6 +153,29 @@
                 </div>
             </div>
         </section>
+    </div>
+
+    <div class="contactanos-index-cont">
+        <p>Seguinos en nuestras redes:</p>
+        <div class="cont-logos-index">
+            <div class="fb-cont-index">
+                <a href="https://www.facebook.com/kandadulces">
+                    <img src="./images/fb-logo-bw.png" alt="">
+                </a>
+            </div>
+            <div class="ig-cont-index">
+                <a href="https://www.instagram.com/dulceskanda">
+                    <img src="./images/ig-logo-bw.png" alt="">
+                </a>
+            </div>
+            <div class="wsp-cont-index">
+                <a href="https://wa.me/message/HOCP7ZMPUYDTE1">
+                    <img src="./images/wsp-logo-bw.png" alt="">
+                </a>
+            </div>
+        </div>
+
+    </div>
 
         <section class="seccion-envios">
             <div class="cont-index-logos">
@@ -150,6 +205,7 @@
                 </div>
             </div>
         </section>
+    
     </main>
     
     <!-- logo whatsapp flotante -->
