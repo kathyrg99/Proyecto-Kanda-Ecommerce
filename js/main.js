@@ -2,23 +2,28 @@
 let usuario = "";
 let visitas = 0;
 
-const $parrafo = document.getElementById("paragraph").innerText;
+const $parrafo = document.getElementById("paragraph");
 
 /* const $parrafo = document.querySelector("#paragraph").innerText;
 
 $parrafo.onclick = () => (identificarUsuario()); */
 
-$parrafo.addEventListener("click", function(){console.log("Hola")});
+$parrafo.addEventListener("click", (e) => identificarUsuario(e));
 
 function identificarUsuario(e){
-    console.log(e.target);
     let nombre = prompt("Ingrese su nombre para identificarse");
     let nombreIdentificado = usuario = nombre;
-    console.log(nombreIdentificado);
+    localStorage.setItem("user", nombreIdentificado);
+    location.reload();
 };
 
 
+function obtenerValores(){
+    let valor = localStorage.getItem("user");
+    $parrafo.innerHTML = `Bienvenid@ ${valor}`
+}
 
+obtenerValores()
 
 
 
