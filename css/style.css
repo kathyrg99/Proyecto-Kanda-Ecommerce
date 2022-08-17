@@ -91,6 +91,9 @@ a{
 
 
 /* MENÚ */
+#paragraph{
+    font-size: 200px;
+}
 main{
     background-image: url(/images/fondo-kanda-muffin.jpeg);
     height: auto;
