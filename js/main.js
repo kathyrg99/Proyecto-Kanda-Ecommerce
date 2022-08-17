@@ -1,12 +1,9 @@
 
 let usuario = "";
 let visitas = 0;
+let stringVacio = ""
 
 const $parrafo = document.getElementById("paragraph");
-
-/* const $parrafo = document.querySelector("#paragraph").innerText;
-
-$parrafo.onclick = () => (identificarUsuario()); */
 
 $parrafo.addEventListener("click", (e) => identificarUsuario(e));
 
@@ -21,7 +18,10 @@ function identificarUsuario(e){
 function obtenerValores(){
     let valor = localStorage.getItem("user");
     $parrafo.innerHTML = `Bienvenid@ ${valor}`
-}
+    if(valor === null || valor === ""){
+        confirm("Debés ingresar un nombre para continuar")
+    } 
+};
 
 obtenerValores()
 
