@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #E6EFEE;
 }
 
 /* header */
@@ -24,8 +25,6 @@ body{
 nav{
     background-color: rgb(239, 223, 255);
     padding: 5px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    top: 0;
 }
 nav ul{
     list-style: none;
@@ -91,12 +90,21 @@ a{
 
 
 /* MENÚ */
+
 #paragraph{
-    font-size: 50px;
+    color: #490b58;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: 500;
+    cursor: pointer;
 }
-main{
-    background-image: url(/images/fondo-kanda-muffin.jpeg);
-    height: auto;
+
+#mostrarVisitas{
+    font-size: 15px;
+    text-align: center;
+    padding: 2px;
 }
 
 .presentacion{
